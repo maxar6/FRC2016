@@ -73,8 +73,8 @@ void Robot::RobotInit() {
 	defenseChooser->AddObject("Rock Wall", new AutoRockWall());
 	defenseChooser->AddObject("Rough Terrain", new AutoRoughTerrain());
 	defenseChooser->AddObject("Moat", new AutoMoat());
-	defenseChooser->AddObject("Porticulis", porticulisChooser);
-	defenseChooser->AddObject("Chivel De Frise", chivedefriseChooser);
+	defenseChooser->AddObject("Porticulis", new AutoPortipulis());
+	defenseChooser->AddObject("Chivel De Frise", new AutoChivel());
 	defenseChooser->AddObject("Ramparts", new AutoRamparts());
 	defenseChooser->AddObject("No Movement", nomoveChooser);
 
