@@ -59,7 +59,7 @@ void Launcher::setLoaderMotor(double s)
 bool Launcher::readArmSensor()
 {
 	SmartDashboard::PutBoolean("Arm Sensor Triggered:", loaderSensor->Get());
-	return loaderMotor->Get();
+	return loaderSensor->Get();
 }
 
 
