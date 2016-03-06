@@ -105,15 +105,8 @@ void Robot::AutonomousInit() {
 		if (autonomousCommand.get() != nullptr)
 			autonomousCommand->Start();
 	*/
-	//DoTCommand->Start();
-	//Start Actual command. Will only run once per time play.
 
-	/*Comented out for Case Switch
-	Command* Drive = new AutoDriveCommand(1, .5, 0);
-	if (Drive != NULL) Drive->Start();
-	Drive = new AutoDriveCommand(1, 0, 90);
-	if (Drive != NULL) Drive->Start();
-	*/
+
 
 	autoDefense = (Command *) defenseChooser->GetSelected();
 	if(autoDefense != NULL)autoDefense->Start();
